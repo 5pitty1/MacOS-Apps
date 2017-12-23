@@ -11,6 +11,7 @@
 		4C5EEED91FDCD5F200DDA8BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EEED81FDCD5F200DDA8BC /* ViewController.swift */; };
 		4C5EEEDB1FDCD5F200DDA8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EEEDA1FDCD5F200DDA8BC /* Assets.xcassets */; };
 		4C5EEEDE1FDCD5F200DDA8BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EEEDC1FDCD5F200DDA8BC /* Main.storyboard */; };
+		4C6BEE751FEE35F700F3AFE8 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BEE741FEE35F700F3AFE8 /* PrefsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4C5EEEDD1FDCD5F200DDA8BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C5EEEDF1FDCD5F200DDA8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5EEEE01FDCD5F200DDA8BC /* EggTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
+		4C6BEE741FEE35F700F3AFE8 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5EEED51FDCD5F200DDA8BC /* EggTimer */,
+				4C6BEE781FEE4FA500F3AFE8 /* Supporting Files */,
 				4C5EEED41FDCD5F200DDA8BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,13 +57,37 @@
 			isa = PBXGroup;
 			children = (
 				4C5EEED61FDCD5F200DDA8BC /* AppDelegate.swift */,
-				4C5EEED81FDCD5F200DDA8BC /* ViewController.swift */,
+				4C6BEE761FEE4F6D00F3AFE8 /* View Controllers */,
+				4C6BEE771FEE4F9000F3AFE8 /* Model */,
 				4C5EEEDA1FDCD5F200DDA8BC /* Assets.xcassets */,
 				4C5EEEDC1FDCD5F200DDA8BC /* Main.storyboard */,
+			);
+			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		4C6BEE761FEE4F6D00F3AFE8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EEED81FDCD5F200DDA8BC /* ViewController.swift */,
+				4C6BEE741FEE35F700F3AFE8 /* PrefsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4C6BEE771FEE4F9000F3AFE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C6BEE781FEE4FA500F3AFE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				4C5EEEDF1FDCD5F200DDA8BC /* Info.plist */,
 				4C5EEEE01FDCD5F200DDA8BC /* EggTimer.entitlements */,
 			);
-			path = EggTimer;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +123,11 @@
 					4C5EEED21FDCD5F200DDA8BC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5EEED91FDCD5F200DDA8BC /* ViewController.swift in Sources */,
+				4C6BEE751FEE35F700F3AFE8 /* PrefsViewController.swift in Sources */,
 				4C5EEED71FDCD5F200DDA8BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
